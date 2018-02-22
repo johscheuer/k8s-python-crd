@@ -15,7 +15,6 @@ def create_crd(api_instance, crd):
 
 # Configs can be set in Configuration class directly or using helper utility
 config.load_kube_config()
-v1 = client.CoreV1Api()
 
 crd_metadata = client.V1ObjectMeta(name='%s.%s' % RESOURCE_NAME, GROUP)
 crd_validation = client.V1beta1CustomResourceValidation(
