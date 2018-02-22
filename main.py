@@ -3,7 +3,7 @@ from kubernetes import client, config, watch
 GROUP = 'stable.example.com'
 RESOURCE_NAME = 'crontabs'
 
-
+# https://github.com/kubernetes-client/python/issues/415
 def create_crd(api_instance, crd):
     try:
         result = api_instance.create_custom_resource_definition(body=crd)

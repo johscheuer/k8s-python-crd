@@ -1,4 +1,4 @@
-#
+# Example Python Kubernetes CRD
 
 ## Python client installation
 
@@ -8,10 +8,9 @@ See https://github.com/kubernetes-client/python for the correct client version.
 sudo -H pip install kubernetes==v5.0.0
 ```
 
-
-
-```
 ### CRD Object
+
+```yaml
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
@@ -36,8 +35,8 @@ spec:
     - ct
 ```
 
-```
-### Validation object
+### CRD Validation object
+```yaml
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
