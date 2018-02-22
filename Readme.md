@@ -1,6 +1,6 @@
 # Kubernetes Python client CRD example
 
-The example is based on the CRD here: https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definition
+The example is based on the CRD here: https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions
 
 ## Python client installation
 
